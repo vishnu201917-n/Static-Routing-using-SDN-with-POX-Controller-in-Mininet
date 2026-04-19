@@ -23,7 +23,7 @@ def _handle_PacketIn(event):
     msg = of.ofp_flow_mod()
     msg.match = of.ofp_match.from_packet(packet)
 
-    # 🔴 STATIC ROUTING + BLOCKING
+    # STATIC ROUTING + BLOCKING
 
     # SWITCH 1 (s1)
     if dpid == 1:
